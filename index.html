@@ -1,1 +1,41 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edder Naranjo</title>
+    <link rel="icon" href="img/avatar.ico">
+    <link rel="stylesheet" href="./css/index.css">
+   
+</head>
+<body onclick="PlayAudio()">
+    <audio id="musica1" autoplay loop>
+        <source src="./multimedia/Espacio.mp3" type="audio/mpeg">
+     </audio>
+ 
+     <video autoplay muted loop playsinline id="myVideo">
+         <source src="./multimedia/Espacio.mp4" type="video/mp4">
+     </video>
+
+    <section>
+        <div class="caja">
+                <form action="">
+                    <h2>
+                        Edder Naranjo
+                    </h2>
+                    <img class="Edder" src="./img/persona.jpg">
+                    <br>
+                    <a class="button" href="./htmls/documento.html">Comenzar</a>
+                </form>
+        </div>
+    </section>
+
+    <script>
+        function PlayAudio(){
+            document.getElementById("musica1").play();
+        }
+    </script>
+
+</body>
+</html>
